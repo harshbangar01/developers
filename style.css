@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Poppins', sans-serif;
+      background: #FFFFFF;
+      color: #333;
+    }
+
+    /* page-1 */
+
+     .image-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .image-container img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: switchImages 10s infinite;
+    }
+
+    .image-container img:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .image-container img:nth-child(2) {
+      animation-delay: 5s;
+    }
+    
+
+    .image-container img:nth-child(3) {
+      animation-delay: 10s;
+    }
+
+    @keyframes switchImages {
+      0% { opacity: 0; }
+      5% { opacity: 1; }
+      45% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    nav {
+      background: transparent;
+      padding: 1rem 2rem;
+      display: flex;
+      font-family: libre franklin;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: transparent;
+    }
+
+    nav .logo {
+      height: 90px;
+      width: 200px;
+    }
+
+    nav .logo img {
+      margin: 24px 0 0 0;
+      height: 30.6px;
+      width: 200px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 12px;
+    }
+
+    nav a:hover {
+      color: #70B246;
+    }
+
+    section.hero {
+      background: transparent;
+      height: 485.6px;
+      /* width: 603.2px; */
+      width: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(0, 0, 0);
+      background-color: #fff;
+      font-size: 15px;
+      font-family: 'Playfair Display SC', serif;
+      text-align: center;
+      padding: 50px;
+      z-index: 1000;
+      position: absolute;
+      left: 8%;
+    }
+
+     .hero-overlay{
+      width: 503.2px;
+     }
+
+    .hero-overlay h2 {
+      font-size: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-overlay p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .hero-overlay #early-bird-offer{
+      font-size: 18px;
+    }
+
+    button {
+      height: 42px;
+      width: 408.8px;
+      padding: 12px;
+      background-color: #70B246;
+      color: #FFFFFF;
+      margin: 5px;
+    }
+
+    .name {
+      height: 42px;
+      width: 408.8px;
+      padding: 5px 14px;
+      margin: 5px;
+    }
+
+    .email {
+      height: 42px;
+      width: 157.51px;
+      padding: 5px 14px;
+    }
+
+    .text {
+      height: 42px;
+      width: 241.28px;
+      padding: 5px 14px;
+    }
+
+    /* page-2 */
+
+    #page-2 {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #1f2e4d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    #page-2 #subtitle {
+      font-size: 0.7rem;
+      text-align: center;
+      font-family: 'Playfair Display SC', serif;
+      font-weight: 100;
+      margin-top: 0;
+    }
+
+    .about p {
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+        .projects .card {
+          background: #f8f9fb;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+
+        .projects .card2 {
+          background: #f8f9fb;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          text-align: center;
+          justify-content: center;
+        }
+
+        .projects .card2 h3{
+          font-size: 1.2rem;
+          margin-top: 45px; 
+          color: #1f2e4d;
+        }
+
+    .projects .card h3 {
+      color: #1f2e4d;
+      margin-bottom: 10px;
+    }
+
+     .projects .card i {
+      width: 45px;
+      height: 45px;
+      font-size: 40px;
+     }
+
+     /* page-3 */
+
+     .page-3 {
+      height: 100vh;
+      width: 100%;
+      background-image: url(https://foyr.com/learn/wp-content/uploads/2019/02/3d-house-floor-plan-design_large.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 30px 0;
+     }
+
+     /* .page-3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0.5;
+     } */
+
+     .page-3 .about-us {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 20px;
+      text-align: center;
+      height: 358.25px;
+      width: 600.94px;
+      background-color: #FFFFFF;
+      position: absolute;
+      left: 55%;
+      margin-top: 160px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-color: #333;
+      border-style: solid;
+      border-width: 1px;
+     }
+      .page-3 .about-us h1 {
+        font-size: 2rem;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+
+      .page-3 .about-us h3 {
+        font-size: 1rem;
+        color: #040506bc;
+        margin-bottom: 10px;
+      }
+
+     .page-3 .about-us p {
+      font-size: 1rem;
+      line-height: 1.4;
+      max-width: 550px;
+      margin: auto;
+      color: #333333bb;
+     }
+
+    /* page-4 */
+
+    .page-4 {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f8f9fb;
+    }
+
+    .page-4 h2 {
+      font-size: 2rem;
+      font-family: 'Playfair Display SC', serif;
+      color: #040404;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .page-4 h3 {
+      font-size: 1.5rem;
+      color: #0d101491;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+     ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+      gap: 10px; /* spacing between items */
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #FFFFFF;
+      padding: 10px;
+      text-align: center;
+    }
+
+    li i {
+      font-size: 24px;
+      color: #1f2e4d;
+      margin-right: 15px;
+    }
+
+     /* page-5 */
+
+     .page-5 {
+      height: 100vh;
+      width: 100%;
+      padding: 80px 20px;
+      font-family: 'Playfair Display SC', serif;
+      align-items: center;
+      justify-content: center;
+     }
+
+     .page-5 h3 {
+      font-size: 1.4rem;
+      color: #101319a8;
+      margin-bottom: 30px;
+      text-align: center;
+     }
+     .map {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+     }
+
+     /* page-6 */
+
+    .gallery {
+      text-align: center;
+      font-family: 'Playfair Display SC', serif;
+    }
+
+    .gallery h4 {
+      font-size: 1.5rem;
+      color: #000000b4;
+      margin-bottom: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 2px;
+      border-radius: 2px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(0.85);
+    }
+
+    /* page-7 */
+
+    .video {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      font-family: 'Playfair Display SC', serif;
+    }
+    .video h2 {
+      font-size: 2rem;
+      color: #1f2e4d;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .video h3 {
+      font-size: 1.2rem;
+      color: #040404bf;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .video iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* page-8 */
+
+    .page-8 {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f8f9fb;
+      font-family: "Playfair Display SC", serif;
+      margin: 30px 0;
+    }
+
+    .page-8 h2 {
+      font-size: 2rem;
+      color: #1f2e4d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .page-8 .floor-plan h3 {
+      font-size: 1.5rem;
+      color: #0d101491;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .plans .plan {
+      background: #f8f9fb;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .plans .plan img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .plans .plan h4 {
+      color: #1f2e4d;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .contact {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f8f9fb;
+      font-family: 'Playfair Display SC', serif;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      background: #0000009d;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-family: 'Playfair Display SC', serif;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Libre Franklin', sans-serif;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 12px;
+      background: #0f1011;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-family: 'Libre Franklin', sans-serif;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact button:hover {
+      background: #25d366;
+      color: #000000;
+    }
+
+    /* footer {
+      background: #000000b0;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 0.9rem;
+      font-family: 'Libre Franklin', sans-serif;
+    } */
+
+    .site-footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.social-links a i {
+  margin-right: 6px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-logo span {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #ccc;
+}
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      z-index: 1001;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+    }
+
+    .whatsapp:hover {
+      background: #20b954;
+    }
